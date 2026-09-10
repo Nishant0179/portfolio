@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Connect | Nishant</title>
+    <meta name="description" content="Get in touch with Nishant for Data Analytics, Machine Learning, and Software Engineering opportunities.">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="gradient-text">NISHANT</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 8rem; padding-bottom: 3rem;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content Grid Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Contact Details Card -->
+                <div class="contact-info-card">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;" class="gradient-text">Direct Contacts</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+                        Feel free to reach out via email, phone, or connect with me on LinkedIn and GitHub.
+                    </p>
+
+                    <!-- Email -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-details">
+                            <label>Email</label>
+                            <a href="mailto:nishantvk44@gmail.com">nishantvk44@gmail.com</a>
+                        </div>
+                        <button class="copy-btn" data-copy="nishantvk44@gmail.com">Copy</button>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-details">
+                            <label>Phone</label>
+                            <a href="tel:+919779891856">+91-9779891856</a>
+                        </div>
+                        <button class="copy-btn" data-copy="+919779891856">Copy</button>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-details">
+                            <label>Location</label>
+                            <span>Gurugram, Haryana, India</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Links Box -->
+                    <div class="card" style="padding: 1.5rem; margin-top: 0.5rem;">
+                        <h4 style="font-size: 1rem; margin-bottom: 1rem; color: var(--text-main);">Social Profiles</h4>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="https://linkedin.com/in/nishant179" target="_blank" class="btn btn-secondary" style="flex: 1; padding: 0.6rem;">
+                                <i class="fab fa-linkedin" style="color: #0a66c2;"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/Nishant0179" target="_blank" class="btn btn-secondary" style="flex: 1; padding: 0.6rem;">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Interactive Form -->
+                <div>
+                    <form class="contact-form" id="contact-form">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;" class="gradient-text">Send a Message</h3>
+                        
+                        <div id="form-feedback" style="display: none;"></div>
+
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="e.g. Alex Smith" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="e.g. alex@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="e.g. Job Opportunity / Collaboration">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/Nishant0179" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/nishant179" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:nishantvk44@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; Nishant</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

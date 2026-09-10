@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishant | Data Analyst & AI Engineer</title>
+    <meta name="description" content="Portfolio of Nishant - Computer Science Graduate, Data Analyst, Machine Learning & AI Specialist.">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="gradient-text">NISHANT</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="status-dot"></span> Available for Data Analytics & AI Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Nishant</span>
+                    </h1>
+                    <div class="typing-container">
+                        I am a <span class="typing-text" id="typing-text"></span>
+                    </div>
+                    <p class="hero-description">
+                        Results-driven Computer Science graduate specializing in Exploratory Data Analysis (EDA), Machine Learning, Power BI dashboard engineering, and modular AI application development. Proficient in Python, SQL, Computer Vision, and REST API integration.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> Explore Projects
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Get in Touch
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Avatar & Visual Frame -->
+                <div class="hero-visual">
+                    <div class="avatar-container">
+                        <img src="images/profile_avatar.jpg" alt="Nishant Profile Avatar" class="avatar-img">
+                        <div class="avatar-badge">
+                            <div>
+                                <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-main);">Nishant</h4>
+                                <p style="font-size: 0.8rem; color: var(--accent-cyan); font-family: var(--font-mono);">Data Analyst & AI Engineer</p>
+                            </div>
+                            <span class="tech-badge" style="background: rgba(0,242,254,0.15); color: var(--accent-cyan); font-weight: 600;">Gurugram, IN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Statistics Counter -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Major Projects Built</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-label">Industry Internships</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="6.75">0</div>
+                    <div class="stat-label">B.Tech CGPA</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Preview Cards with Images -->
+    <section class="section" style="background: rgba(0,0,0,0.15);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What I Build</span>
+                <h2 class="section-title">Featured Solutions</h2>
+            </div>
+            
+            <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                <div class="project-card">
+                    <div class="project-banner">
+                        <img src="images/assistive_system.jpg" alt="Assistive System UI" class="project-banner-img">
+                        <span class="project-category-tag">AI & Computer Vision</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Assistive System</h3>
+                        <p class="project-desc">Real-time object detection with YOLO11 ONNX & audio guidance for visually impaired navigation.</p>
+                        <div class="badge-group">
+                            <span class="tech-badge">PyQt5</span>
+                            <span class="tech-badge">YOLO11</span>
+                            <span class="tech-badge">PaddleOCR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-banner">
+                        <img src="images/sales_dashboard.jpg" alt="Sales Analytics Dashboard" class="project-banner-img">
+                        <span class="project-category-tag">Power BI Solution</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sales Analytics Dashboard</h3>
+                        <p class="project-desc">DAX-driven Power BI dashboards tracking KPIs, regional trends, and profit margins.</p>
+                        <div class="badge-group">
+                            <span class="tech-badge">Power BI</span>
+                            <span class="tech-badge">DAX</span>
+                            <span class="tech-badge">Star Schema</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-banner">
+                        <img src="images/disease_prediction.jpg" alt="Disease Prediction Web App" class="project-banner-img">
+                        <span class="project-category-tag">Django Machine Learning</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Disease Prediction Portal</h3>
+                        <p class="project-desc">Engineered multi-module diagnostic portal predicting 6 critical health conditions.</p>
+                        <div class="badge-group">
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">Scikit-Learn</span>
+                            <span class="tech-badge">Render</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="projects.html" class="btn btn-primary">
+                    View All Projects & Live Demos <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/Nishant0179" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/nishant179" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:nishantvk44@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; Nishant</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

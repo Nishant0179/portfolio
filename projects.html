@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Portfolio | Nishant</title>
+    <meta name="description" content="Explore key projects built by Nishant, including AI Assistive Systems, Multiple Disease Prediction, Power BI Dashboards, and AI Chatbots.">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="gradient-text">NISHANT</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 8rem; padding-bottom: 3rem;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Featured Work</span>
+                <h2 class="section-title">Key Engineering <span class="gradient-text">Projects</span></h2>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai-vision">AI & Computer Vision</button>
+                <button class="filter-btn" data-filter="web-app">Web Applications</button>
+                <button class="filter-btn" data-filter="analytics">Data Analytics & Power BI</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card" data-category="ai-vision">
+                    <div class="project-banner">
+                        <img src="images/assistive_system.jpg" alt="AI Assistive System UI" class="project-banner-img">
+                        <span class="project-category-tag">B.Tech Major Project</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Smart Assistive System for Visually Impaired</h3>
+                        <p class="project-desc">
+                            Voice-activated PyQt5 application utilizing YOLO11 (ONNX) real-time object detection and ResNet3D-18 activity recognition with audio guidance and Twilio emergency alerts.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-badge">PyQt5</span>
+                            <span class="tech-badge">YOLO11</span>
+                            <span class="tech-badge">Donut VQA</span>
+                            <span class="tech-badge">PaddleOCR</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-primary project-btn open-project-modal" data-project="assistive-system">
+                                <i class="fas fa-info-circle"></i> Architecture Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="web-app">
+                    <div class="project-banner">
+                        <img src="images/disease_prediction.jpg" alt="Disease Prediction Diagnostics Portal UI" class="project-banner-img">
+                        <span class="project-category-tag">Django Web Portal</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Multiple Disease Prediction System</h3>
+                        <p class="project-desc">
+                            Engineered a multi-module clinical diagnostics portal predicting 6 critical conditions with optimized Scikit-Learn classifiers prioritizing Recall and Joblib model serialization.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">Scikit-Learn</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">Joblib</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://multiple-disease-prediction-t0kt.onrender.com" target="_blank" class="btn btn-primary project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <button class="btn btn-secondary project-btn open-project-modal" data-project="disease-prediction">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="analytics">
+                    <div class="project-banner">
+                        <img src="images/sales_dashboard.jpg" alt="Power BI Executive Sales Dashboard UI" class="project-banner-img">
+                        <span class="project-category-tag">Power BI Solution</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Interactive Sales Analytics Dashboard</h3>
+                        <p class="project-desc">
+                            Profiled transaction records in Excel/Power BI, resolved data inconsistencies, modeled Star Schema tables, and built DAX dashboards tracking KPIs and profit margins.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-badge">Power BI</span>
+                            <span class="tech-badge">DAX</span>
+                            <span class="tech-badge">Excel</span>
+                            <span class="tech-badge">Star Schema</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-primary project-btn open-project-modal" data-project="sales-analytics">
+                                <i class="fas fa-info-circle"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="web-app">
+                    <div class="project-banner">
+                        <img src="images/career_chatbot.jpg" alt="AI Career Chatbot UI" class="project-banner-img">
+                        <span class="project-category-tag">Flask Web Application</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI-Powered Career Guidance Chatbot</h3>
+                        <p class="project-desc">
+                            Flask web app integrating OpenAI API to dynamically parse academic profiles and generate custom career roadmaps with course suggestions via Jinja templates.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">OpenAI API</span>
+                            <span class="tech-badge">Jinja2</span>
+                            <span class="tech-badge">Python</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://career-chatbot-web.onrender.com" target="_blank" class="btn btn-primary project-btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <button class="btn btn-secondary project-btn open-project-modal" data-project="career-chatbot">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Drawer Container -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+            <div class="modal-body-content">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/Nishant0179" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/nishant179" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:nishantvk44@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; Nishant</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
